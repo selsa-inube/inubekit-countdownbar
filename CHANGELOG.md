@@ -1,3 +1,20 @@
+# v0.0.2 (Wed Feb 07 2024)
+
+#### 🐛 Bug Fix
+
+- implementation of  `<CountdownBar  />`  component [#1](https://github.com/selsa-inube/inubekit-countdownbar/pull/1) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### ⚠️ Pushed to `main`
+
+- Initial commit ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 2
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v0.0.1 (Wed Jan 17 2024)
 
 #### ⚠️ Pushed to `main`
