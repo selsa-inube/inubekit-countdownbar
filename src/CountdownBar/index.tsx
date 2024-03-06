@@ -2,7 +2,7 @@ import { AnimationEvent } from "react";
 import { StyledCountdownBar } from "./styles";
 import { Appearance } from "./props";
 
-export interface ICountdownBarProps {
+export interface ICountdownBar {
   height?: string;
   appearance?: Appearance;
   duration?: number;
@@ -16,7 +16,7 @@ export const CountdownBar = ({
   duration = 3000,
   paused = false,
   onCountdown,
-}: ICountdownBarProps) => {
+}: ICountdownBar) => {
   return (
     <StyledCountdownBar
       id="progress-bar"

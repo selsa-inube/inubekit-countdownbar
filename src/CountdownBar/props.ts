@@ -1,6 +1,6 @@
 import { inube } from "@inubekit/foundations";
 
-export type Appearance = keyof typeof inube.color.stroke;
+type Appearance = keyof typeof inube.countdownBar;
 
 const parameters = {
   docs: {
@@ -21,7 +21,7 @@ const props = {
     },
   },
   appearance: {
-    options: Object.keys(inube.color.stroke),
+    options: inube.countdownBar,
     control: { type: "select" },
     description: "colors used to identify the state of the component",
     table: {
@@ -48,3 +48,4 @@ const props = {
 };
 
 export { props, parameters };
+export type { Appearance };

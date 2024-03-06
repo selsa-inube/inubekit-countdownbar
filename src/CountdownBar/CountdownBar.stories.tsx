@@ -1,4 +1,4 @@
-import { CountdownBar, ICountdownBarProps } from ".";
+import { CountdownBar, ICountdownBar } from ".";
 import { action } from "@storybook/addon-actions";
 import { props, parameters } from "./props";
 
@@ -12,7 +12,7 @@ const story = {
   },
 };
 
-const Default = (args: ICountdownBarProps) => <CountdownBar {...args} />;
+const Default = (args: ICountdownBar) => <CountdownBar {...args} />;
 Default.args = {
   height: "4px",
   appearance: "primary",
