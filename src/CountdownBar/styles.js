@@ -18,8 +18,8 @@ export const StyledCountdownBar = styled.div`
   animation: ${$CountdownBarAnimation} ${({ $duration }) => $duration}ms linear;
   background-color: ${({ theme, $appearance }) => {
     return (
-      theme?.color?.stroke?.[$appearance]?.regular ||
-      inube.color.stroke[$appearance].regular
+      theme?.countdownBar?.[$appearance]?.color ||
+      inube.countdownBar[$appearance].color
     );
   }};
   animation-fill-mode: forwards;
