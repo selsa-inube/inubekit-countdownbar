@@ -1,8 +1,6 @@
-import { ThemeProvider } from "styled-components";
-import { CountdownBar, ICountdownBarProps } from ".";
+import { CountdownBar, ICountdownBar } from ".";
 import { action } from "@storybook/addon-actions";
 import { props, parameters } from "./props";
-import { presente } from "@inubekit/foundations";
 
 const story = {
   title: "feedback/CountdownBar",
@@ -14,8 +12,7 @@ const story = {
   },
 };
 
-export const Default = (args: ICountdownBarProps) => <CountdownBar {...args} />;
-
+const Default = (args: ICountdownBar) => <CountdownBar {...args} />;
 Default.args = {
   height: "4px",
   appearance: "primary",
@@ -24,14 +21,5 @@ Default.args = {
   onCountdown: action("onAnimationEnd"),
 };
 
-const theme = {
-  ...presente,
-};
-
-export const Themed = (args: ICountdownBarProps) => (
-  <ThemeProvider theme={theme}>
-    <CountdownBar {...args} />
-  </ThemeProvider>
-);
-
+export { Default };
 export default story;
