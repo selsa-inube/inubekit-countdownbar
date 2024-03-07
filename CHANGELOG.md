@@ -1,3 +1,20 @@
+# v2.0.0 (Thu Mar 07 2024)
+
+#### 💥 Breaking Change
+
+- Refactor component to use new token structure [#3](https://github.com/selsa-inube/inubekit-countdownbar/pull/3) ([@cmarin001](https://github.com/cmarin001))
+
+#### 🐛 Bug Fix
+
+- Publish `<CountdownBar />` package npm [#2](https://github.com/selsa-inube/inubekit-countdownbar/pull/2) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 2
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v0.0.2 (Wed Feb 07 2024)
 
 #### 🐛 Bug Fix
