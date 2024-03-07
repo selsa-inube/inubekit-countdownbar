@@ -1,4 +1,4 @@
-const appereances = [
+const appearances = [
   "primary",
   "success",
   "warning",
@@ -8,7 +8,7 @@ const appereances = [
   "gray",
   "light",
 ] as const;
-type Appearance = typeof appereances;
+type Appearance = (typeof appearances)[number];
 
 const parameters = {
   docs: {
@@ -29,7 +29,7 @@ const props = {
     },
   },
   appearance: {
-    options: appereances,
+    options: appearances,
     control: { type: "select" },
     description: "colors used to identify the state of the component",
     table: {
