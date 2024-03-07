@@ -1,6 +1,13 @@
-import { inube } from "@inubekit/foundations";
-
-const appereances = Object.keys(inube.countdownBar);
+const appereances = [
+  "primary",
+  "success",
+  "warning",
+  "danger",
+  "help",
+  "dark",
+  "gray",
+  "light",
+] as const;
 type Appearance = typeof appereances;
 
 const parameters = {
