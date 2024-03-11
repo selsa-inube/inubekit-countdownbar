@@ -2,7 +2,7 @@ import { AnimationEvent } from "react";
 import { StyledCountdownBar } from "./styles";
 import { Appearance } from "./props";
 
-export interface ICountdownBar {
+interface ICountdownBar {
   height?: string;
   appearance?: Appearance;
   duration?: number;
@@ -10,13 +10,25 @@ export interface ICountdownBar {
   onCountdown?: (e: AnimationEvent<HTMLDivElement>) => void;
 }
 
-export const CountdownBar = ({
+const CountdownBar = ({
   height = "4px",
   appearance = "primary",
   duration = 3000,
   paused = false,
   onCountdown,
 }: ICountdownBar) => {
+  const interceptOnCountdown = (e: AnimationEvent<HTMLDivElement>) => {
+    try {
+      onCountdown && onCountdown(e);
+    } catch (error) {
+      if (error instanceof Error) {
+        throw new Error(error.message);
+      } else {
+        throw new Error("An unknown error occurred");
+      }
+    }
+  };
+
   return (
     <StyledCountdownBar
       id="progress-bar"
@@ -24,7 +36,10 @@ export const CountdownBar = ({
       $height={height}
       $duration={duration}
       $paused={paused}
-      onAnimationEnd={onCountdown}
+      onAnimationEnd={interceptOnCountdown}
     />
   );
 };
+
+export { CountdownBar };
+export type { ICountdownBar };
