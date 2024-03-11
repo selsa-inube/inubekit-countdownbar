@@ -1,3 +1,19 @@
+# v2.1.0 (Mon Mar 11 2024)
+
+#### 🚀 Enhancement
+
+- Implement try..catch in props of type function [#5](https://github.com/selsa-inube/inubekit-countdownbar/pull/5) ([@cmarin001](https://github.com/cmarin001))
+
+#### 📝 Documentation
+
+- Release new version 2.0.0 [#4](https://github.com/selsa-inube/inubekit-countdownbar/pull/4) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.0.0 (Thu Mar 07 2024)
 
 #### 💥 Breaking Change
