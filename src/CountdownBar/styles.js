@@ -11,7 +11,7 @@ const $CountdownBarAnimation = keyframes`
   }
 `;
 
-export const StyledCountdownBar = styled.div`
+const StyledCountdownBar = styled.div`
   width: 100%;
   height: ${({ $height }) => $height};
   transform-origin: left;
@@ -25,3 +25,5 @@ export const StyledCountdownBar = styled.div`
   animation-fill-mode: forwards;
   animation-play-state: ${({ $paused }) => ($paused ? "paused" : "running")};
 `;
+
+export { StyledCountdownBar };
