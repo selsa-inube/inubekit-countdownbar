@@ -8,7 +8,7 @@ const appearances = [
   "gray",
   "light",
 ] as const;
-type Appearance = (typeof appearances)[number];
+type ICountdownBarAppearance = (typeof appearances)[number];
 
 const parameters = {
   docs: {
@@ -56,4 +56,4 @@ const props = {
 };
 
 export { props, parameters };
-export type { Appearance };
+export type { ICountdownBarAppearance };
