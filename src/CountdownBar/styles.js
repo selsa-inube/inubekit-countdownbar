@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import { inube } from "@inubekit/foundations";
+import { tokens } from "./Tokens/tokens";
 
 const $CountdownBarAnimation = keyframes`
   0% {
@@ -18,8 +18,7 @@ const StyledCountdownBar = styled.div`
   animation: ${$CountdownBarAnimation} ${({ $duration }) => $duration}ms linear;
   background-color: ${({ theme, $appearance }) => {
     return (
-      theme?.countdownBar?.[$appearance]?.color ||
-      inube.countdownBar[$appearance].color
+      theme?.countdownBar?.[$appearance]?.color || tokens[$appearance].color
     );
   }};
   animation-fill-mode: forwards;
