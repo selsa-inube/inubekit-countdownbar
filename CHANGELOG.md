@@ -1,3 +1,15 @@
+# v2.16.0 (Tue Sep 24 2024)
+
+#### 🚀 Enhancement
+
+- Move countdownbar tokens from foundations to component [#24](https://github.com/selsa-inube/inubekit-countdownbar/pull/24) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.15.0 (Mon Sep 02 2024)
 
 #### 🚀 Enhancement
