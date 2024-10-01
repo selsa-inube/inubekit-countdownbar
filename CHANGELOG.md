@@ -1,3 +1,15 @@
+# v2.17.0 (Tue Oct 01 2024)
+
+#### 🚀 Enhancement
+
+- Auto-merge PR [#25](https://github.com/selsa-inube/inubekit-countdownbar/pull/25) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.16.0 (Tue Sep 24 2024)
 
 #### 🚀 Enhancement
